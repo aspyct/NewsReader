@@ -14,8 +14,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Accept JSON as text/plain
     [AFJSONRequestOperation addAcceptableContentTypes:[NSSet setWithObject:@"text/plain"]];
-    // Override point for customization after application launch.
+    
+    // Display network activity indicator
+    [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
+
     return YES;
 }
 							
