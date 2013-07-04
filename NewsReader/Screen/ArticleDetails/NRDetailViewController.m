@@ -74,6 +74,15 @@
 }
 
 - (void)updateArticleBody {
+    if (self.article.body == nil) {
+        [self.articleLoader fillArticle:self.article success:^() {
+            [self.activityIndicator stopAnimating];
+        } failure:^{
+            [self.activityIndicator stopAnimating];
+            NSLog(@"Could not fetch article");
+        }];
+    }
+    
     self.bodyTextView.text = self.article.body;
 }
 
@@ -87,17 +96,6 @@
     [super viewDidLoad];
     
     [self updateScreen];
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    [self.articleLoader fillArticle:self.article success:^() {
-        [self.activityIndicator stopAnimating];
-    } failure:^{
-        [self.activityIndicator stopAnimating];
-        NSLog(@"Could not fetch article");
-    }];
 }
 
 - (void)dealloc {
