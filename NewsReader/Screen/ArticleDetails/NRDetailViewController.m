@@ -108,7 +108,6 @@
 
 - (IBAction)doTapActionButton:(id)sender {
     NSString *message = self.article.urlString;
-    
     NSArray *postItems = @[message];
     
     UIActivityViewController *activityVC = [[UIActivityViewController alloc]
