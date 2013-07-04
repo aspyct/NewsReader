@@ -8,10 +8,13 @@
 
 #import "NRAppDelegate.h"
 
+#import "AFNetworking.h"
+
 @implementation NRAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [AFJSONRequestOperation addAcceptableContentTypes:[NSSet setWithObject:@"text/plain"]];
     // Override point for customization after application launch.
     return YES;
 }
