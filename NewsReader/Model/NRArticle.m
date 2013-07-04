@@ -11,11 +11,22 @@
 @implementation NRArticle
 
 - (void)fillWithDict:(NSDictionary *)dict {
-    self.articleId = dict[@"articleId"];
-    self.title = dict[@"title"];
-    self.publishDate = dict[@"publishDate"];
-    self.excerpt = dict[@"excerpt"];
-    self.body = dict[@"body"];
+    self.articleId = [self valueOrNil:dict forKey:@"articleId"];
+    self.title = [self valueOrNil:dict forKey:@"title"];
+    self.publishDate = [self valueOrNil:dict forKey:@"publishDate"];
+    self.excerpt = [self valueOrNil:dict forKey:@"excerpt"];
+    self.body = [self valueOrNil:dict forKey:@"body"];
+}
+
+- (id)valueOrNil:(NSDictionary *)dict forKey:(NSString *)key {
+    id value = dict[key];
+    
+    if (value == [NSNull null]) {
+        return nil;
+    }
+    else {
+        return value;
+    }
 }
 
 + (NRArticle *)articleFromDict:(NSDictionary *)dict {

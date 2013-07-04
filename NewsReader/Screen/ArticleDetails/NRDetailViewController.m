@@ -7,10 +7,13 @@
 //
 
 #import "NRDetailViewController.h"
+#import "NRArticleLoader.h"
 
 @interface NRDetailViewController ()
 
+@property NRArticleLoader *loader;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UITextView *bodyTextView;
 
 @end
 
@@ -68,7 +71,7 @@
 }
 
 - (void)updateArticleBody {
-    
+    self.bodyTextView.text = self.article.body;
 }
 
 - (void)updateArticlePublishDate {
@@ -81,6 +84,15 @@
     [super viewDidLoad];
     
     [self updateScreen];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    self.loader = [[NRArticleLoader alloc] init];
+    [self.loader fillArticle:self.article success:nil failure:^{
+        NSLog(@"Could not fetch article");
+    }];
 }
 
 - (void)dealloc {
