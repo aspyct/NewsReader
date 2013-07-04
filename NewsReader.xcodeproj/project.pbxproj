@@ -28,6 +28,7 @@
 		C50E92331785845300F75710 /* NRArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = C50E92321785845300F75710 /* NRArticle.m */; };
 		C50E923A1785A23900F75710 /* NRTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C50E92391785A23500F75710 /* NRTitleLabel.m */; };
 		C50E923D1785A4CA00F75710 /* NRHTTPArticleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C50E923C1785A4CA00F75710 /* NRHTTPArticleLoader.m */; };
+		C5C8740D1785B44D00D159BD /* NRLinkButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C8740C1785B44D00D159BD /* NRLinkButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		C50E923B1785A4CA00F75710 /* NRHTTPArticleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRHTTPArticleLoader.h; sourceTree = "<group>"; };
 		C50E923C1785A4CA00F75710 /* NRHTTPArticleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRHTTPArticleLoader.m; sourceTree = "<group>"; };
 		C50E923F1785AC7E00F75710 /* NRArticleLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NRArticleLoader.h; sourceTree = "<group>"; };
+		C5C8740B1785B44D00D159BD /* NRLinkButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRLinkButton.h; sourceTree = "<group>"; };
+		C5C8740C1785B44D00D159BD /* NRLinkButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRLinkButton.m; sourceTree = "<group>"; };
 		E11F85ED9758465284CE97EE /* Pods/Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -223,6 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				C50E92371785A22400F75710 /* Labels */,
+				C5C8740B1785B44D00D159BD /* NRLinkButton.h */,
+				C5C8740C1785B44D00D159BD /* NRLinkButton.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -386,6 +391,7 @@
 				C50E923D1785A4CA00F75710 /* NRHTTPArticleLoader.m in Sources */,
 				C50E920917857EDB00F75710 /* NRDetailViewController.m in Sources */,
 				C50E920017857EDB00F75710 /* NRAppDelegate.m in Sources */,
+				C5C8740D1785B44D00D159BD /* NRLinkButton.m in Sources */,
 				C50E91FC17857EDB00F75710 /* main.m in Sources */,
 				C50E92331785845300F75710 /* NRArticle.m in Sources */,
 			);
