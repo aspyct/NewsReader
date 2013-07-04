@@ -89,8 +89,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    self.loader = [[NRHTTPArticleLoader alloc] init];
-    [self.loader fillArticle:self.article success:nil failure:^{
+    [self.articleLoader fillArticle:self.article success:nil failure:^{
         NSLog(@"Could not fetch article");
     }];
 }

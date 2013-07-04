@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 
 #import "NRArticle.h"
+#import "NRArticleLoader.h"
 
 @interface NRDetailViewController : UIViewController
 
 @property (strong, nonatomic) NRArticle *article;
+@property id<NRArticleLoader> articleLoader;
 
 @end

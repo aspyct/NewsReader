@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "NRArticle.h"
+
 @protocol NRArticleLoader <NSObject>
 
 - (void)fillArticle:(NRArticle *)article success:(void (^)())success failure:(void (^)())failure;
