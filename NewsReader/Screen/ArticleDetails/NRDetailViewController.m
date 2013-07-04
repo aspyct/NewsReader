@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UITextView *bodyTextView;
 @property (strong, nonatomic) IBOutlet NSObject<NRArticleLoader> *articleLoader;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @end
 
@@ -91,7 +92,10 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    [self.articleLoader fillArticle:self.article success:nil failure:^{
+    [self.articleLoader fillArticle:self.article success:^() {
+        [self.activityIndicator stopAnimating];
+    } failure:^{
+        [self.activityIndicator stopAnimating];
         NSLog(@"Could not fetch article");
     }];
 }

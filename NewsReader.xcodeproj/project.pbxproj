@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9BB99209964B4ACBAE59845A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4998D2096C6740969A22FC5F /* libPods.a */; };
+		C5010BCA1785B71D00CC03A1 /* NRAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5010BC91785B71D00CC03A1 /* NRAboutViewController.m */; };
 		C50E91F017857EDB00F75710 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C50E91EF17857EDB00F75710 /* Foundation.framework */; };
 		C50E91F217857EDB00F75710 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C50E91F117857EDB00F75710 /* CoreGraphics.framework */; };
 		C50E91F417857EDB00F75710 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C50E91F317857EDB00F75710 /* UIKit.framework */; };
@@ -43,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		4998D2096C6740969A22FC5F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5010BC81785B71D00CC03A1 /* NRAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRAboutViewController.h; sourceTree = "<group>"; };
+		C5010BC91785B71D00CC03A1 /* NRAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRAboutViewController.m; sourceTree = "<group>"; };
 		C50E91EC17857EDB00F75710 /* NewsReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C50E91EF17857EDB00F75710 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C50E91F117857EDB00F75710 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -105,6 +108,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C5010BC71785B6F000CC03A1 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				C5010BC81785B71D00CC03A1 /* NRAboutViewController.h */,
+				C5010BC91785B71D00CC03A1 /* NRAboutViewController.m */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
 		C50E91E317857EDA00F75710 = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +197,7 @@
 		C50E922A1785802E00F75710 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				C5010BC71785B6F000CC03A1 /* About */,
 				C50E922C1785808B00F75710 /* ArticleDetails */,
 				C50E922B1785803C00F75710 /* Home */,
 			);
@@ -384,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5010BCA1785B71D00CC03A1 /* NRAboutViewController.m in Sources */,
 				C50E92291785802700F75710 /* NRArticleListDataSource.m in Sources */,
 				C50E922F178581DE00F75710 /* NRArticleSummaryCell.m in Sources */,
 				C50E920617857EDB00F75710 /* NRMasterViewController.m in Sources */,

@@ -86,10 +86,10 @@
             </objects>
             <point key="canvasLocation" x="459" y="64"/>
         </scene>
-        <!--View Controller-->
+        <!--About View Controller-->
         <scene sceneID="2tt-gf-b8p">
             <objects>
-                <viewController id="9Yv-D8-hJm" sceneMemberID="viewController">
+                <viewController id="9Yv-D8-hJm" customClass="NRAboutViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cmL-IY-gJm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -114,7 +114,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem id="4io-4H-ekq">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="Ocn-st-gpI"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="Ocn-st-gpI">
+                                            <connections>
+                                                <action selector="doDone:" destination="9Yv-D8-hJm" id="QEt-Bh-8uc"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -165,12 +169,17 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES" address="YES" calendarEvent="YES"/>
                             </textView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="rz6-E6-8tu">
+                                <rect key="frame" x="142" y="233" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Detail" id="cra-N8-TIN"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="rz6-E6-8tu" id="pq5-j1-ojv"/>
                         <outlet property="articleLoader" destination="Rgt-nv-Pt4" id="igc-W2-cc1"/>
                         <outlet property="bodyTextView" destination="3DM-As-a0O" id="10y-5b-xEg"/>
                         <outlet property="titleLabel" destination="qHI-AV-Dim" id="Ujt-wq-D2c"/>
@@ -186,12 +195,19 @@
         <image name="forkme" width="149" height="149"/>
     </resources>
     <classes>
+        <class className="NRAboutViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NRAboutViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="doDone:"/>
+            </relationships>
+        </class>
         <class className="NRArticleSummaryCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NRArticleSummaryCell.h"/>
         </class>
         <class className="NRDetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NRDetailViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
                 <relationship kind="outlet" name="articleLoader" candidateClass="NSObject"/>
                 <relationship kind="outlet" name="bodyTextView" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
