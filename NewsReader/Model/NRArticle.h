@@ -10,6 +10,7 @@
 
 @interface NRArticle : NSObject
 
+@property NSNumber *articleId;
 @property NSString *title;
 @property NSString *excerpt;
 @property NSString *publishDate; // TODO not nice to have a string for a date

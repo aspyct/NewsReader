@@ -13,6 +13,7 @@
 + (NRArticle *)articleFromDict:(NSDictionary *)dict {
     NRArticle *article = [[NRArticle alloc] init];
     
+    article.articleId = dict[@"articleId"];
     article.title = dict[@"title"];
     article.publishDate = dict[@"publishDate"];
     article.excerpt = dict[@"excerpt"];
