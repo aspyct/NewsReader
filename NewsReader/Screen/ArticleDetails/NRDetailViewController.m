@@ -107,8 +107,7 @@
 #pragma mark - IBActions
 
 - (IBAction)doTapActionButton:(id)sender {
-    NSString *message = self.article.urlString;
-    NSArray *postItems = @[message];
+    NSArray *postItems = @[self.article.title, self.article.urlString];
     
     UIActivityViewController *activityVC = [[UIActivityViewController alloc]
                                             initWithActivityItems:postItems
