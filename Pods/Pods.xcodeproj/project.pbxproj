@@ -74,6 +74,8 @@
 		BCC3A28675E94E41AAE892AF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		BEACBC0CB7AC48B3B0FA5738 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = SOURCE_ROOT; };
 		BEB7FE84D663490CAC326F0D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C543C7551785BB04006A871E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		C543C7571785BB09006A871E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		D734C42009BC484B8A275D15 /* AFNetworking/AFNetworking/AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AFNetworking/AFNetworking/AFHTTPRequestOperation.h; sourceTree = SOURCE_ROOT; };
 		E5191C890F884AB4BD0BF603 /* AFNetworking/AFNetworking/AFXMLRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AFNetworking/AFNetworking/AFXMLRequestOperation.m; sourceTree = SOURCE_ROOT; };
 		E81374E6FA5744329D716120 /* AFNetworking/AFNetworking/UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking/AFNetworking/UIImageView+AFNetworking.h"; sourceTree = SOURCE_ROOT; };
@@ -175,6 +177,8 @@
 		9CF43771C6A6446EBEECB3B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C543C7571785BB09006A871E /* SystemConfiguration.framework */,
+				C543C7551785BB04006A871E /* MobileCoreServices.framework */,
 				BB9E1EA3481F451DBB5FE08B /* CoreGraphics.framework */,
 				705A085A85DB4B118CE04D24 /* Foundation.framework */,
 				2825B02F5F5B4186A7B60A30 /* MobileCoreServices.framework */,

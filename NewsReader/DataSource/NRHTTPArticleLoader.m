@@ -13,7 +13,7 @@
 @implementation NRHTTPArticleLoader
 
 - (void)fillArticle:(NRArticle *)article success:(void (^)())success failure:(void (^)())failure {
-    NSString *urlString = [NSString stringWithFormat:@"http://localhost:8000/article/details/%@", article.articleId];
+    NSString *urlString = [NSString stringWithFormat:SERVER_URL(/article/details/%@), article.articleId];
     NSURL *url = [NSURL URLWithString:urlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     

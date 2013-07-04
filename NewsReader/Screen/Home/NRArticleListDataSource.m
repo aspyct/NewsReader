@@ -25,7 +25,7 @@
 }
 
 - (void)reloadData:(void (^)())success failure:(void (^)())failure {
-    NSURL *listUrl = [NSURL URLWithString:@"http://localhost:8000/article/list"];
+    NSURL *listUrl = [NSURL URLWithString:SERVER_URL(/article/list)];
     NSURLRequest *request = [NSURLRequest requestWithURL:listUrl];
     
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {

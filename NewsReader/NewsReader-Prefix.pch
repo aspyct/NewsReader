@@ -14,3 +14,6 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+#define SERVER_ROOT "http://localhost:8000"
+#define SERVER_URL(last_part) (@ SERVER_ROOT #last_part)

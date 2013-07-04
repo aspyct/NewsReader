@@ -14,7 +14,7 @@
 
 @interface NRMasterViewController ()
 
-@property NRArticleListDataSource *dataSource;
+@property IBOutlet NRArticleListDataSource *dataSource;
 @property UIRefreshControl *refreshControl;
 
 @end
@@ -25,9 +25,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.dataSource = [[NRArticleListDataSource alloc] init];
-    self.tableView.dataSource = self.dataSource;
     
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl addTarget:self action:@selector(reloadData) forControlEvents:UIControlEventValueChanged];

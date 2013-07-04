@@ -78,6 +78,8 @@
 		C50E923B1785A4CA00F75710 /* NRHTTPArticleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRHTTPArticleLoader.h; sourceTree = "<group>"; };
 		C50E923C1785A4CA00F75710 /* NRHTTPArticleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRHTTPArticleLoader.m; sourceTree = "<group>"; };
 		C50E923F1785AC7E00F75710 /* NRArticleLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NRArticleLoader.h; sourceTree = "<group>"; };
+		C543C7511785BAB6006A871E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C543C7531785BAC2006A871E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		C5C8740B1785B44D00D159BD /* NRLinkButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRLinkButton.h; sourceTree = "<group>"; };
 		C5C8740C1785B44D00D159BD /* NRLinkButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRLinkButton.m; sourceTree = "<group>"; };
 		E11F85ED9758465284CE97EE /* Pods/Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -140,6 +142,8 @@
 		C50E91EE17857EDB00F75710 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C543C7531785BAC2006A871E /* MobileCoreServices.framework */,
+				C543C7511785BAB6006A871E /* SystemConfiguration.framework */,
 				C50E91EF17857EDB00F75710 /* Foundation.framework */,
 				C50E91F117857EDB00F75710 /* CoreGraphics.framework */,
 				C50E91F317857EDB00F75710 /* UIKit.framework */,
@@ -533,6 +537,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NewsReader/NewsReader-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
 				INFOPLIST_FILE = "NewsReader/NewsReader-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -547,6 +555,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NewsReader/NewsReader-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
 				INFOPLIST_FILE = "NewsReader/NewsReader-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

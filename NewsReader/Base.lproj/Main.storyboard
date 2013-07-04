@@ -60,10 +60,13 @@
                             </tableViewCell>
                         </prototypes>
                         <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="pVf-I8-KJX" id="bNl-nF-Y4P"/>
+                        </connections>
                     </tableView>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Aspyct" id="tQt-TN-PWz">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="T0V-3c-JxE">
+                        <barButtonItem key="leftBarButtonItem" id="T0V-3c-JxE">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="5fM-Vu-sxv">
                                 <rect key="frame" x="16" y="11" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -81,8 +84,12 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="dataSource" destination="pVf-I8-KJX" id="nnk-nV-Uda"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cn-md-YlS" sceneMemberID="firstResponder"/>
+                <customObject id="pVf-I8-KJX" customClass="NRArticleListDataSource"/>
             </objects>
             <point key="canvasLocation" x="459" y="64"/>
         </scene>
@@ -201,6 +208,9 @@
                 <relationship kind="action" name="doDone:"/>
             </relationships>
         </class>
+        <class className="NRArticleListDataSource" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NRArticleListDataSource.h"/>
+        </class>
         <class className="NRArticleSummaryCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NRArticleSummaryCell.h"/>
         </class>
@@ -221,6 +231,9 @@
         </class>
         <class className="NRMasterViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NRMasterViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dataSource" candidateClass="NRArticleListDataSource"/>
+            </relationships>
         </class>
         <class className="NRTitleLabel" superclassName="UILabel">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NRTitleLabel.h"/>
