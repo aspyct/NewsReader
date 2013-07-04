@@ -14,6 +14,5 @@
 @interface NRDetailViewController : UIViewController
 
 @property (strong, nonatomic) NRArticle *article;
-@property id<NRArticleLoader> articleLoader;
 
 @end

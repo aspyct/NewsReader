@@ -12,8 +12,10 @@
 @interface NRDetailViewController ()
 
 @property NRHTTPArticleLoader *loader;
+
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UITextView *bodyTextView;
+@property (strong, nonatomic) IBOutlet NSObject<NRArticleLoader> *articleLoader;
 
 @end
 
