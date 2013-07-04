@@ -16,6 +16,7 @@
     self.publishDate = [self valueOrNil:dict forKey:@"publishDate"];
     self.excerpt = [self valueOrNil:dict forKey:@"excerpt"];
     self.body = [self valueOrNil:dict forKey:@"body"];
+    self.urlString = [self valueOrNil:dict forKey:@"urlString"];
 }
 
 - (id)valueOrNil:(NSDictionary *)dict forKey:(NSString *)key {

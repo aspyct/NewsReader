@@ -104,4 +104,17 @@
     [self stopObserving:self.article];
 }
 
+#pragma mark - IBActions
+
+- (IBAction)doTapActionButton:(id)sender {
+    NSString *message = self.article.urlString;
+    
+    NSArray *postItems = @[message];
+    
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc]
+                                            initWithActivityItems:postItems
+                                            applicationActivities:nil];
+    [self presentViewController:activityVC animated:YES completion:nil];
+}
+
 @end

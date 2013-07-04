@@ -15,6 +15,7 @@
 @property NSString *excerpt;
 @property NSString *publishDate; // TODO not nice to have a string for a date
 @property NSString *body;
+@property NSString *urlString;
 
 - (void)fillWithDict:(NSDictionary *)dict;
 + (NRArticle *)articleFromDict:(NSDictionary *)dict;

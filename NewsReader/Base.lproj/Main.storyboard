@@ -184,7 +184,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <navigationItem key="navigationItem" title="Detail" id="cra-N8-TIN"/>
+                    <navigationItem key="navigationItem" title="Detail" id="cra-N8-TIN">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="action" id="YnD-p4-wB3">
+                            <connections>
+                                <action selector="doTapActionButton:" destination="Ah7-4n-0Wa" id="57n-IC-R6o"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="activityIndicator" destination="rz6-E6-8tu" id="pq5-j1-ojv"/>
                         <outlet property="articleLoader" destination="Rgt-nv-Pt4" id="igc-W2-cc1"/>
@@ -217,6 +223,7 @@
         <class className="NRDetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NRDetailViewController.h"/>
             <relationships>
+                <relationship kind="action" name="doTapActionButton:"/>
                 <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
                 <relationship kind="outlet" name="articleLoader" candidateClass="NSObject"/>
                 <relationship kind="outlet" name="bodyTextView" candidateClass="UITextView"/>
