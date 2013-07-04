@@ -10,14 +10,18 @@
 
 @implementation NRArticle
 
+- (void)fillWithDict:(NSDictionary *)dict {
+    self.articleId = dict[@"articleId"];
+    self.title = dict[@"title"];
+    self.publishDate = dict[@"publishDate"];
+    self.excerpt = dict[@"excerpt"];
+    self.body = dict[@"body"];
+}
+
 + (NRArticle *)articleFromDict:(NSDictionary *)dict {
     NRArticle *article = [[NRArticle alloc] init];
     
-    article.articleId = dict[@"articleId"];
-    article.title = dict[@"title"];
-    article.publishDate = dict[@"publishDate"];
-    article.excerpt = dict[@"excerpt"];
-    article.body = dict[@"body"];
+    [article fillWithDict:dict];
     
     return article;
 }

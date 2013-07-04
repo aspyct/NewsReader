@@ -16,6 +16,7 @@
 @property NSString *publishDate; // TODO not nice to have a string for a date
 @property NSString *body;
 
+- (void)fillWithDict:(NSDictionary *)dict;
 + (NRArticle *)articleFromDict:(NSDictionary *)dict;
 
 @end
