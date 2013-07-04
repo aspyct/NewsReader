@@ -6,11 +6,11 @@
 //  Copyright (c) 2013 Aspyct. All rights reserved.
 //
 
-#import "NRArticleLoader.h"
+#import "NRHTTPArticleLoader.h"
 
 #import "AFNetworking.h"
 
-@implementation NRArticleLoader
+@implementation NRHTTPArticleLoader
 
 - (void)fillArticle:(NRArticle *)article success:(void (^)())success failure:(void (^)())failure {
     NSString *urlString = [NSString stringWithFormat:@"http://localhost:8000/article/details/%@", article.articleId];

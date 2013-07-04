@@ -27,7 +27,7 @@
 		C50E922F178581DE00F75710 /* NRArticleSummaryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C50E922E1785814A00F75710 /* NRArticleSummaryCell.m */; };
 		C50E92331785845300F75710 /* NRArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = C50E92321785845300F75710 /* NRArticle.m */; };
 		C50E923A1785A23900F75710 /* NRTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C50E92391785A23500F75710 /* NRTitleLabel.m */; };
-		C50E923D1785A4CA00F75710 /* NRArticleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C50E923C1785A4CA00F75710 /* NRArticleLoader.m */; };
+		C50E923D1785A4CA00F75710 /* NRHTTPArticleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C50E923C1785A4CA00F75710 /* NRHTTPArticleLoader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,8 +71,8 @@
 		C50E92321785845300F75710 /* NRArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRArticle.m; sourceTree = "<group>"; };
 		C50E92381785A23500F75710 /* NRTitleLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NRTitleLabel.h; sourceTree = "<group>"; };
 		C50E92391785A23500F75710 /* NRTitleLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NRTitleLabel.m; sourceTree = "<group>"; };
-		C50E923B1785A4CA00F75710 /* NRArticleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRArticleLoader.h; sourceTree = "<group>"; };
-		C50E923C1785A4CA00F75710 /* NRArticleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRArticleLoader.m; sourceTree = "<group>"; };
+		C50E923B1785A4CA00F75710 /* NRHTTPArticleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRHTTPArticleLoader.h; sourceTree = "<group>"; };
+		C50E923C1785A4CA00F75710 /* NRHTTPArticleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRHTTPArticleLoader.m; sourceTree = "<group>"; };
 		E11F85ED9758465284CE97EE /* Pods/Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -204,8 +204,8 @@
 			children = (
 				C50E920717857EDB00F75710 /* NRDetailViewController.h */,
 				C50E920817857EDB00F75710 /* NRDetailViewController.m */,
-				C50E923B1785A4CA00F75710 /* NRArticleLoader.h */,
-				C50E923C1785A4CA00F75710 /* NRArticleLoader.m */,
+				C50E923B1785A4CA00F75710 /* NRHTTPArticleLoader.h */,
+				C50E923C1785A4CA00F75710 /* NRHTTPArticleLoader.m */,
 			);
 			path = ArticleDetails;
 			sourceTree = "<group>";
@@ -373,7 +373,7 @@
 				C50E922F178581DE00F75710 /* NRArticleSummaryCell.m in Sources */,
 				C50E920617857EDB00F75710 /* NRMasterViewController.m in Sources */,
 				C50E923A1785A23900F75710 /* NRTitleLabel.m in Sources */,
-				C50E923D1785A4CA00F75710 /* NRArticleLoader.m in Sources */,
+				C50E923D1785A4CA00F75710 /* NRHTTPArticleLoader.m in Sources */,
 				C50E920917857EDB00F75710 /* NRDetailViewController.m in Sources */,
 				C50E920017857EDB00F75710 /* NRAppDelegate.m in Sources */,
 				C50E91FC17857EDB00F75710 /* main.m in Sources */,

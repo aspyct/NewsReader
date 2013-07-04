@@ -7,11 +7,11 @@
 //
 
 #import "NRDetailViewController.h"
-#import "NRArticleLoader.h"
+#import "NRHTTPArticleLoader.h"
 
 @interface NRDetailViewController ()
 
-@property NRArticleLoader *loader;
+@property NRHTTPArticleLoader *loader;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UITextView *bodyTextView;
 
@@ -89,7 +89,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    self.loader = [[NRArticleLoader alloc] init];
+    self.loader = [[NRHTTPArticleLoader alloc] init];
     [self.loader fillArticle:self.article success:nil failure:^{
         NSLog(@"Could not fetch article");
     }];

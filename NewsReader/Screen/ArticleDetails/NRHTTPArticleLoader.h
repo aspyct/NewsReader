@@ -10,7 +10,7 @@
 
 #import "NRArticle.h"
 
-@interface NRArticleLoader : NSObject
+@interface NRHTTPArticleLoader : NSObject
 
 - (void)fillArticle:(NRArticle *)article success:(void (^)())success failure:(void (^)())failure;
 
