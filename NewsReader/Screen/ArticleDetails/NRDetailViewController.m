@@ -24,7 +24,7 @@
         _article = article;
         [self startObserving:_article];
         
-        [self updateArticle];
+        [self updateScreen];
     }
 }
 
@@ -54,7 +54,7 @@
     }
 }
 
-- (void)updateArticle
+- (void)updateScreen
 {
     if (self.article) {
         [self updateArticleTitle];
@@ -80,7 +80,7 @@
 {
     [super viewDidLoad];
     
-    [self updateArticle];
+    [self updateScreen];
 }
 
 - (void)dealloc {
