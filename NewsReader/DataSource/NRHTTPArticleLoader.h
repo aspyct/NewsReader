@@ -8,10 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-#import "NRArticle.h"
+#import "NRArticleLoader.h"
 
-@interface NRHTTPArticleLoader : NSObject
-
-- (void)fillArticle:(NRArticle *)article success:(void (^)())success failure:(void (^)())failure;
+@interface NRHTTPArticleLoader : NSObject<NRArticleLoader>
 
 @end
