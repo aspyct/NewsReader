@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import "NRArticle.h"
+
 @interface NRDetailViewController : UIViewController
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) NRArticle *article;
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @end
