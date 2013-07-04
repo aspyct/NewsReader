@@ -107,7 +107,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHs-Fd-J46">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHs-Fd-J46">
                                 <rect key="frame" x="20" y="154" width="280" height="414"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -146,6 +146,11 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KHs-Fd-J46" firstAttribute="bottom" secondItem="cmL-IY-gJm" secondAttribute="bottom" id="4oY-rH-ISD"/>
+                            <constraint firstAttribute="centerX" secondItem="KHs-Fd-J46" secondAttribute="centerX" id="SGc-4g-uiF"/>
+                            <constraint firstItem="KHs-Fd-J46" firstAttribute="top" secondItem="cmL-IY-gJm" secondAttribute="top" constant="154" id="vh9-Xe-wNk"/>
+                        </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                 </viewController>
