@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C50E91EB17857EDB00F75710"
-               BuildableName = "NewsReader.app"
+               BuildableName = "aspyct.org.app"
                BlueprintName = "NewsReader"
                ReferencedContainer = "container:NewsReader.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C50E91EB17857EDB00F75710"
-            BuildableName = "NewsReader.app"
+            BuildableName = "aspyct.org.app"
             BlueprintName = "NewsReader"
             ReferencedContainer = "container:NewsReader.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C50E91EB17857EDB00F75710"
-            BuildableName = "NewsReader.app"
+            BuildableName = "aspyct.org.app"
             BlueprintName = "NewsReader"
             ReferencedContainer = "container:NewsReader.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C50E91EB17857EDB00F75710"
-            BuildableName = "NewsReader.app"
+            BuildableName = "aspyct.org.app"
             BlueprintName = "NewsReader"
             ReferencedContainer = "container:NewsReader.xcodeproj">
          </BuildableReference>
