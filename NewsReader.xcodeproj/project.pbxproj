@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		399CA0EB339D4981B2C8AF07 /* libPods-NewsReaderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F089FE3AF1946B2A0F91F30 /* libPods-NewsReaderTests.a */; };
 		9BB99209964B4ACBAE59845A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4998D2096C6740969A22FC5F /* libPods.a */; };
 		C5010BCA1785B71D00CC03A1 /* NRAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5010BC91785B71D00CC03A1 /* NRAboutViewController.m */; };
 		C50E91F017857EDB00F75710 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C50E91EF17857EDB00F75710 /* Foundation.framework */; };
@@ -30,7 +31,8 @@
 		C50E923A1785A23900F75710 /* NRTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C50E92391785A23500F75710 /* NRTitleLabel.m */; };
 		C50E923D1785A4CA00F75710 /* NRHTTPArticleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C50E923C1785A4CA00F75710 /* NRHTTPArticleLoader.m */; };
 		C51190F01786C5D100541BB0 /* NRDetailViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C51190EE1786C5D000541BB0 /* NRDetailViewControllerTest.m */; };
-		C59E37051786CC1E0020AE65 /* UIControl+Manipulate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59E37041786CC1B0020AE65 /* UIControl+Manipulate.m */; };
+		C59E370B1786D0C80020AE65 /* NRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C50E920817857EDB00F75710 /* NRDetailViewController.m */; };
+		C59E370C1786D0E40020AE65 /* NRArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = C50E92321785845300F75710 /* NRArticle.m */; };
 		C5C8740D1785B44D00D159BD /* NRLinkButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C8740C1785B44D00D159BD /* NRLinkButton.m */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F089FE3AF1946B2A0F91F30 /* libPods-NewsReaderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewsReaderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4998D2096C6740969A22FC5F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5010BC81785B71D00CC03A1 /* NRAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRAboutViewController.h; sourceTree = "<group>"; };
 		C5010BC91785B71D00CC03A1 /* NRAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRAboutViewController.m; sourceTree = "<group>"; };
@@ -85,9 +88,12 @@
 		C543C7531785BAC2006A871E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		C59E37031786CC1B0020AE65 /* UIControl+Manipulate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+Manipulate.h"; sourceTree = "<group>"; };
 		C59E37041786CC1B0020AE65 /* UIControl+Manipulate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Manipulate.m"; sourceTree = "<group>"; };
+		C59E37081786CF560020AE65 /* UIBarButtonItem+Manipulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Manipulate.h"; sourceTree = "<group>"; };
+		C59E37091786CF560020AE65 /* UIBarButtonItem+Manipulate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Manipulate.m"; sourceTree = "<group>"; };
 		C5C8740B1785B44D00D159BD /* NRLinkButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRLinkButton.h; sourceTree = "<group>"; };
 		C5C8740C1785B44D00D159BD /* NRLinkButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRLinkButton.m; sourceTree = "<group>"; };
 		E11F85ED9758465284CE97EE /* Pods/Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		FFBAD503DA854A15B238D189 /* Pods/Pods-NewsReaderTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods/Pods-NewsReaderTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 				C50E921217857EDB00F75710 /* XCTest.framework in Frameworks */,
 				C50E921417857EDB00F75710 /* UIKit.framework in Frameworks */,
 				C50E921317857EDB00F75710 /* Foundation.framework in Frameworks */,
+				399CA0EB339D4981B2C8AF07 /* libPods-NewsReaderTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +139,7 @@
 				C50E91EE17857EDB00F75710 /* Frameworks */,
 				C50E91ED17857EDB00F75710 /* Products */,
 				E11F85ED9758465284CE97EE /* Pods/Pods.xcconfig */,
+				FFBAD503DA854A15B238D189 /* Pods/Pods-NewsReaderTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,6 +162,7 @@
 				C50E91F317857EDB00F75710 /* UIKit.framework */,
 				C50E921117857EDB00F75710 /* XCTest.framework */,
 				4998D2096C6740969A22FC5F /* libPods.a */,
+				2F089FE3AF1946B2A0F91F30 /* libPods-NewsReaderTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -280,6 +289,8 @@
 			children = (
 				C59E37031786CC1B0020AE65 /* UIControl+Manipulate.h */,
 				C59E37041786CC1B0020AE65 /* UIControl+Manipulate.m */,
+				C59E37081786CF560020AE65 /* UIBarButtonItem+Manipulate.h */,
+				C59E37091786CF560020AE65 /* UIBarButtonItem+Manipulate.m */,
 			);
 			path = Manipulate;
 			sourceTree = "<group>";
@@ -310,9 +321,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C50E922417857EDB00F75710 /* Build configuration list for PBXNativeTarget "NewsReaderTests" */;
 			buildPhases = (
+				83EB27F522E54058AEF9DCBB /* Check Pods Manifest.lock */,
 				C50E920C17857EDB00F75710 /* Sources */,
 				C50E920D17857EDB00F75710 /* Frameworks */,
 				C50E920E17857EDB00F75710 /* Resources */,
+				95993961AB9C4E088BE40D7B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -410,6 +423,36 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		83EB27F522E54058AEF9DCBB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		95993961AB9C4E088BE40D7B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-NewsReaderTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -435,8 +478,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C59E37051786CC1E0020AE65 /* UIControl+Manipulate.m in Sources */,
+				C59E370B1786D0C80020AE65 /* NRDetailViewController.m in Sources */,
 				C50E921E17857EDB00F75710 /* NewsReaderTests.m in Sources */,
+				C59E370C1786D0E40020AE65 /* NRArticle.m in Sources */,
 				C51190F01786C5D100541BB0 /* NRDetailViewControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -586,6 +630,7 @@
 		};
 		C50E922517857EDB00F75710 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFBAD503DA854A15B238D189 /* Pods/Pods-NewsReaderTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NewsReader.app/NewsReader";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -608,6 +653,7 @@
 		};
 		C50E922617857EDB00F75710 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFBAD503DA854A15B238D189 /* Pods/Pods-NewsReaderTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NewsReader.app/NewsReader";
 				FRAMEWORK_SEARCH_PATHS = (

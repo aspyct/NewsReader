@@ -7,8 +7,13 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <OCMock/OCMock.h>
+#import "UIControl+Manipulate.h"
+#import "UIBarButtonItem+Manipulate.h"
 
+#import "NRArticle.h"
 #import "NRDetailViewController.h"
+
 
 @interface NRDetailViewControllerTest : XCTestCase
 
@@ -24,13 +29,9 @@
     [super setUp];
     
     self.target = [[NRDetailViewController alloc] init];
-    self.target.article = 
-}
-
-- (void)tearDown
-{
-    // Put teardown code here; it will be run once, after the last test case.
-    [super tearDown];
+    self.target.article = [OCMockObject mockForClass:[NRArticle class]];
+    
+    self.navController = [[UINavigationController alloc] initWithRootViewController:self.target];
 }
 
 - (void)testExample
@@ -39,7 +40,10 @@
 }
 
 - (void)testRightNavButtonShouldOpenActivitySheet {
+    UIBarButtonItem *rightButton = self.target.navigationItem.rightBarButtonItem;
     
+    [rightButton tapBarButtonItem];
+    XCTAssertEquals(nil, nil, @"Hello there");
 }
 
 @end
