@@ -29,6 +29,8 @@
 		C50E92331785845300F75710 /* NRArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = C50E92321785845300F75710 /* NRArticle.m */; };
 		C50E923A1785A23900F75710 /* NRTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C50E92391785A23500F75710 /* NRTitleLabel.m */; };
 		C50E923D1785A4CA00F75710 /* NRHTTPArticleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C50E923C1785A4CA00F75710 /* NRHTTPArticleLoader.m */; };
+		C51190F01786C5D100541BB0 /* NRDetailViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C51190EE1786C5D000541BB0 /* NRDetailViewControllerTest.m */; };
+		C59E37051786CC1E0020AE65 /* UIControl+Manipulate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59E37041786CC1B0020AE65 /* UIControl+Manipulate.m */; };
 		C5C8740D1785B44D00D159BD /* NRLinkButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C8740C1785B44D00D159BD /* NRLinkButton.m */; };
 /* End PBXBuildFile section */
 
@@ -78,8 +80,11 @@
 		C50E923B1785A4CA00F75710 /* NRHTTPArticleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRHTTPArticleLoader.h; sourceTree = "<group>"; };
 		C50E923C1785A4CA00F75710 /* NRHTTPArticleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRHTTPArticleLoader.m; sourceTree = "<group>"; };
 		C50E923F1785AC7E00F75710 /* NRArticleLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NRArticleLoader.h; sourceTree = "<group>"; };
+		C51190EE1786C5D000541BB0 /* NRDetailViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRDetailViewControllerTest.m; sourceTree = "<group>"; };
 		C543C7511785BAB6006A871E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C543C7531785BAC2006A871E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C59E37031786CC1B0020AE65 /* UIControl+Manipulate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+Manipulate.h"; sourceTree = "<group>"; };
+		C59E37041786CC1B0020AE65 /* UIControl+Manipulate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Manipulate.m"; sourceTree = "<group>"; };
 		C5C8740B1785B44D00D159BD /* NRLinkButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRLinkButton.h; sourceTree = "<group>"; };
 		C5C8740C1785B44D00D159BD /* NRLinkButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRLinkButton.m; sourceTree = "<group>"; };
 		E11F85ED9758465284CE97EE /* Pods/Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -183,8 +188,10 @@
 		C50E921717857EDB00F75710 /* NewsReaderTests */ = {
 			isa = PBXGroup;
 			children = (
+				C59E37021786CBF30020AE65 /* Manipulate */,
 				C50E921D17857EDB00F75710 /* NewsReaderTests.m */,
 				C50E921817857EDB00F75710 /* Supporting Files */,
+				C51190EE1786C5D000541BB0 /* NRDetailViewControllerTest.m */,
 			);
 			path = NewsReaderTests;
 			sourceTree = "<group>";
@@ -266,6 +273,15 @@
 				C50E923F1785AC7E00F75710 /* NRArticleLoader.h */,
 			);
 			path = DataSource;
+			sourceTree = "<group>";
+		};
+		C59E37021786CBF30020AE65 /* Manipulate */ = {
+			isa = PBXGroup;
+			children = (
+				C59E37031786CC1B0020AE65 /* UIControl+Manipulate.h */,
+				C59E37041786CC1B0020AE65 /* UIControl+Manipulate.m */,
+			);
+			path = Manipulate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,7 +435,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C59E37051786CC1E0020AE65 /* UIControl+Manipulate.m in Sources */,
 				C50E921E17857EDB00F75710 /* NewsReaderTests.m in Sources */,
+				C51190F01786C5D100541BB0 /* NRDetailViewControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
