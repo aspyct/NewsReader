@@ -218,48 +218,6 @@
     <resources>
         <image name="forkme" width="149" height="149"/>
     </resources>
-    <classes>
-        <class className="NRAboutViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NRAboutViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="doDone:"/>
-            </relationships>
-        </class>
-        <class className="NRArticleListDataSource" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NRArticleListDataSource.h"/>
-        </class>
-        <class className="NRArticleSummaryCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NRArticleSummaryCell.h"/>
-        </class>
-        <class className="NRDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NRDetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="doTapActionButton:"/>
-                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
-                <relationship kind="outlet" name="articleLoader" candidateClass="NSObject"/>
-                <relationship kind="outlet" name="bodyTextView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="NRHTTPArticleLoader" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NRHTTPArticleLoader.h"/>
-        </class>
-        <class className="NRLinkButton" superclassName="UIButton">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NRLinkButton.h"/>
-        </class>
-        <class className="NRMasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NRMasterViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="dataSource" candidateClass="NRArticleListDataSource"/>
-            </relationships>
-        </class>
-        <class className="NRTitleLabel" superclassName="UILabel">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NRTitleLabel.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
