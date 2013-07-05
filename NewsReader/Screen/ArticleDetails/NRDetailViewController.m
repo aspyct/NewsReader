@@ -75,7 +75,10 @@
 
 - (void)updateArticleBody {
     if (self.article.body == nil) {
-        [self.articleLoader fillArticle:self.article success:^() {
+        [self.activityIndicator startAnimating];
+        
+        [self.articleLoader loadFullArticle:self.article success:^(NRArticle *article) {
+            self.article = article;
             [self.activityIndicator stopAnimating];
         } failure:^{
             [self.activityIndicator stopAnimating];

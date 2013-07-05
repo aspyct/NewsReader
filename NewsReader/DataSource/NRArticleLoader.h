@@ -12,6 +12,6 @@
 
 @protocol NRArticleLoader <NSObject>
 
-- (void)fillArticle:(NRArticle *)article success:(void (^)())success failure:(void (^)())failure;
+- (void)loadFullArticle:(NRArticle *)article success:(void (^)(NRArticle *))success failure:(void (^)())failure;
 
 @end

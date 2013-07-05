@@ -12,17 +12,14 @@
 
 @implementation NRHTTPArticleLoader
 
-- (void)fillArticle:(NRArticle *)article success:(void (^)())success failure:(void (^)())failure {
+- (void)loadFullArticle:(NRArticle *)article success:(void (^)(NRArticle *))success failure:(void (^)())failure {
     NSString *urlString = [NSString stringWithFormat:SERVER_URL(/article/details/%@), article.articleId];
     NSURL *url = [NSURL URLWithString:urlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
-        [article fillWithDict:JSON];
-        
-        if (success) {
-            success();
-        }
+        NRArticle *article = [NRArticle articleFromDict:JSON];
+        success(article);
     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
         if (failure) {
             failure();
