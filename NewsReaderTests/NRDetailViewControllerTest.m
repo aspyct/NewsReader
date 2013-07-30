@@ -19,6 +19,7 @@
 
 @property UINavigationController *navController;
 @property NRDetailViewController *target;
+@property NRArticle *article;
 
 @end
 
@@ -27,9 +28,14 @@
 - (void)setUp
 {
     [super setUp];
-    
     self.target = [[NRDetailViewController alloc] init];
-    self.target.article = [OCMockObject mockForClass:[NRArticle class]];
+    
+    self.article = [OCMockObject mockForClass:[NRArticle class]];
+    self.target.article = self.article;
+    
+    id articleMock = self.article;
+    [articleMock stub] addObserver:self.target forKeyPath:@"title" options:<#(NSKeyValueObservingOptions)#> context:<#(void *)#>
+    
     
     self.navController = [[UINavigationController alloc] initWithRootViewController:self.target];
 }
